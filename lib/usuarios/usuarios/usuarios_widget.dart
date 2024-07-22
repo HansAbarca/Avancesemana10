@@ -1,12 +1,9 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/usuarios/anadir_empleado/anadir_empleado_widget.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'usuarios_model.dart';
 export 'usuarios_model.dart';
 
@@ -57,7 +54,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -68,14 +65,14 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -101,14 +98,14 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               25.0, 25.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -117,7 +114,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                   onTap: () async {
                                     context.pushNamed('Home');
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_back_ios_rounded,
                                     color: Colors.white,
                                     size: 40.0,
@@ -132,7 +129,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -201,7 +198,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                       child: Container(
                                         width: 145.0,
                                         height: 139.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
@@ -232,7 +229,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.person_add,
@@ -252,11 +249,11 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -290,7 +287,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                 Container(
                                   width: 145.0,
                                   height: 139.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -320,7 +317,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.password_sharp,
                                               color:
@@ -338,7 +335,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                         children: [
                                           Expanded(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'Recuperar Contraseña',
@@ -380,7 +377,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                       child: Container(
                                         width: 145.0,
                                         height: 139.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
@@ -411,7 +408,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons
@@ -432,11 +429,11 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -469,7 +466,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                   ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 50.0)),
+                          ].divide(const SizedBox(height: 50.0)),
                         ),
                       ),
                     ),

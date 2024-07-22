@@ -1,16 +1,12 @@
 import '/alertas/pregunta_frecuente_anadida/pregunta_frecuente_anadida_widget.dart';
 import '/asistente_virtual/anadir_pregunta_general/anadir_pregunta_general_widget.dart';
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'anadir_pregunta_model.dart';
 export 'anadir_pregunta_model.dart';
@@ -177,7 +173,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -193,7 +189,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -201,7 +197,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                       if (FFAppState().anadirEmpleadoConfirmacion == false)
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 60.0, 0.0, 60.0, 0.0),
                             child: Text(
                               'Añadir Pregunta',
@@ -237,7 +233,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -253,7 +249,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                             setState(() {});
                             Navigator.pop(context);
                           },
-                          child: Icon(
+                          child: const Icon(
                             Icons.clear,
                             color: Colors.black,
                             size: 40.0,
@@ -270,7 +266,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -343,7 +339,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(50.0),
                                         bottomRight: Radius.circular(50.0),
                                         topLeft: Radius.circular(50.0),
@@ -552,7 +548,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(50.0),
                                         bottomRight: Radius.circular(50.0),
                                         topLeft: Radius.circular(50.0),
@@ -769,7 +765,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                                                     MediaQuery.viewInsetsOf(
                                                         context),
                                                 child:
-                                                    AnadirPreguntaGeneralWidget(),
+                                                    const AnadirPreguntaGeneralWidget(),
                                               );
                                             },
                                           ).then(
@@ -802,7 +798,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                                                       MediaQuery.viewInsetsOf(
                                                           context),
                                                   child:
-                                                      PreguntaFrecuenteAnadidaWidget(),
+                                                      const PreguntaFrecuenteAnadidaWidget(),
                                                 );
                                               },
                                             ).then(
@@ -832,7 +828,7 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                                               return 124.0;
                                             }
                                           }(),
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0xFF00B821),
                                             borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(50.0),
@@ -895,9 +891,9 @@ class _AnadirPreguntaWidgetState extends State<AnadirPreguntaWidget>
                             ],
                           ),
                         ]
-                            .divide(SizedBox(height: 30.0))
-                            .addToStart(SizedBox(height: 15.0))
-                            .addToEnd(SizedBox(height: 30.0)),
+                            .divide(const SizedBox(height: 30.0))
+                            .addToStart(const SizedBox(height: 15.0))
+                            .addToEnd(const SizedBox(height: 30.0)),
                       ),
                     ),
                   ),

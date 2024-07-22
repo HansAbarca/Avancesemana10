@@ -2,11 +2,8 @@ import '/backend/backend.dart';
 import '/contabilidad/info_compra/info_compra_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'seguimineto_financiero_model.dart';
 export 'seguimineto_financiero_model.dart';
@@ -53,7 +50,7 @@ class _SeguiminetoFinancieroWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Stack(
             children: [
               Opacity(
@@ -62,7 +59,7 @@ class _SeguiminetoFinancieroWidgetState
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -96,17 +93,17 @@ class _SeguiminetoFinancieroWidgetState
                       snapshot.data!;
 
                   return Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Stack(
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 0.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -132,14 +129,14 @@ class _SeguiminetoFinancieroWidgetState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     25.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -148,7 +145,7 @@ class _SeguiminetoFinancieroWidgetState
                                         onTap: () async {
                                           context.pushNamed('Contabilidad');
                                         },
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.arrow_back_ios_rounded,
                                           color: Colors.white,
                                           size: 40.0,
@@ -161,7 +158,7 @@ class _SeguiminetoFinancieroWidgetState
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 20.0, 20.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -187,7 +184,7 @@ class _SeguiminetoFinancieroWidgetState
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   5.0, 30.0, 5.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -263,7 +260,7 @@ class _SeguiminetoFinancieroWidgetState
                                                   BorderRadius.circular(50.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 10.0, 0.0),
                                               child: Row(
@@ -279,7 +276,7 @@ class _SeguiminetoFinancieroWidgetState
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -294,7 +291,7 @@ class _SeguiminetoFinancieroWidgetState
                                                             EasyDebounce
                                                                 .debounce(
                                                           '_model.buscarTextController',
-                                                          Duration(
+                                                          const Duration(
                                                               milliseconds: 50),
                                                           () async {
                                                             if (_model
@@ -314,8 +311,8 @@ class _SeguiminetoFinancieroWidgetState
                                                                           .map(
                                                                             (record) =>
                                                                                 TextSearchItem.fromTerms(record, [
-                                                                              record.clienteQueCompra!,
-                                                                              record.id!
+                                                                              record.clienteQueCompra,
+                                                                              record.id
                                                                             ]),
                                                                           )
                                                                           .toList(),
@@ -414,7 +411,7 @@ class _SeguiminetoFinancieroWidgetState
                                                       .toList();
 
                                               return GridView.builder(
-                                                padding: EdgeInsets.fromLTRB(
+                                                padding: const EdgeInsets.fromLTRB(
                                                   0,
                                                   10.0,
                                                   0,
@@ -505,7 +502,7 @@ class _SeguiminetoFinancieroWidgetState
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
+                                                        boxShadow: const [
                                                           BoxShadow(
                                                             blurRadius: 4.0,
                                                             color: Color(
@@ -517,7 +514,7 @@ class _SeguiminetoFinancieroWidgetState
                                                           )
                                                         ],
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   20.0),
@@ -576,7 +573,7 @@ class _SeguiminetoFinancieroWidgetState
                                                             children: [
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -645,7 +642,7 @@ class _SeguiminetoFinancieroWidgetState
                                                   .toList();
 
                                               return GridView.builder(
-                                                padding: EdgeInsets.fromLTRB(
+                                                padding: const EdgeInsets.fromLTRB(
                                                   0,
                                                   10.0,
                                                   0,
@@ -690,7 +687,7 @@ class _SeguiminetoFinancieroWidgetState
                                                       color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
-                                                      boxShadow: [
+                                                      boxShadow: const [
                                                         BoxShadow(
                                                           blurRadius: 4.0,
                                                           color:
@@ -702,7 +699,7 @@ class _SeguiminetoFinancieroWidgetState
                                                         )
                                                       ],
                                                       borderRadius:
-                                                          BorderRadius.only(
+                                                          const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
                                                                 20.0),
@@ -809,7 +806,7 @@ class _SeguiminetoFinancieroWidgetState
                                                             children: [
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -872,7 +869,7 @@ class _SeguiminetoFinancieroWidgetState
                                       ],
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 50.0)),
+                                ].divide(const SizedBox(height: 50.0)),
                               ),
                             ),
                           ),

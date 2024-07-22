@@ -5,10 +5,7 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'preguntas_frecuentes_model.dart';
 export 'preguntas_frecuentes_model.dart';
 
@@ -70,7 +67,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                 containerPreguntasFrecuentesRecordList = snapshot.data!;
 
             return Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Stack(
                 children: [
                   Opacity(
@@ -79,7 +76,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                       width: double.infinity,
                       height: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0x00FFFFFF),
+                        color: const Color(0x00FFFFFF),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
@@ -90,14 +87,14 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Stack(
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 20.0, 20.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -141,14 +138,14 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   25.0, 25.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -157,7 +154,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                       onTap: () async {
                                         context.pushNamed('Asistentevirtual');
                                       },
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.arrow_back_ios_rounded,
                                         color: Colors.white,
                                         size: 40.0,
@@ -172,7 +169,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                 (valueOrDefault(currentUserDocument?.rol, '') ==
                                     'Supervisor'))
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 25.0, 20.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Row(
@@ -181,7 +178,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -209,14 +206,14 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                                         MediaQuery.viewInsetsOf(
                                                             context),
                                                     child:
-                                                        AnadirPreguntaWidget(),
+                                                        const AnadirPreguntaWidget(),
                                                   ),
                                                 );
                                               },
                                             ).then(
                                                 (value) => safeSetState(() {}));
                                           },
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle,
                                             color: Colors.white,
                                             size: 40.0,
@@ -231,9 +228,9 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: Builder(
                                 builder: (context) {
@@ -251,7 +248,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                             preguntas[preguntasIndex];
                                         return Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 10.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -384,7 +381,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                                                 child:
                                                                     Container(
                                                                   decoration:
-                                                                      BoxDecoration(
+                                                                      const BoxDecoration(
                                                                     borderRadius:
                                                                         BorderRadius
                                                                             .only(
@@ -422,7 +419,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(45.0, 5.0, 45.0, 5.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(45.0, 5.0, 45.0, 5.0),
                                                                                     child: Text(
                                                                                       preguntasItem.pregunta,
                                                                                       textAlign: TextAlign.center,
@@ -490,12 +487,12 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                                                           'Supervisor'))
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             20.0,
@@ -535,7 +532,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                                                             child:
                                                                                 Icon(
                                                                               Icons.delete_forever,
-                                                                              color: Color(0xFFFF0000),
+                                                                              color: const Color(0xFFFF0000),
                                                                               size: () {
                                                                                 if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
                                                                                   return 24.0;
@@ -565,7 +562,7 @@ class _PreguntasFrecuentesWidgetState extends State<PreguntasFrecuentesWidget> {
                                             ],
                                           ),
                                         );
-                                      }).divide(SizedBox(height: 15.0)),
+                                      }).divide(const SizedBox(height: 15.0)),
                                     ),
                                   );
                                 },

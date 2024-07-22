@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -10,12 +8,7 @@ import '/backend/schema/structs/index.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -80,83 +73,83 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomeWidget() : EntranceWidget(),
+          appStateNotifier.loggedIn ? const HomeWidget() : const EntranceWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomeWidget() : EntranceWidget(),
+              appStateNotifier.loggedIn ? const HomeWidget() : const EntranceWidget(),
         ),
         FFRoute(
           name: 'Entrance',
           path: '/entrance',
-          builder: (context, params) => EntranceWidget(),
+          builder: (context, params) => const EntranceWidget(),
         ),
         FFRoute(
           name: 'EntrarLogin',
           path: '/entrarLogin',
-          builder: (context, params) => EntrarLoginWidget(),
+          builder: (context, params) => const EntrarLoginWidget(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
-          builder: (context, params) => HomeWidget(),
+          builder: (context, params) => const HomeWidget(),
         ),
         FFRoute(
           name: 'Inventario',
           path: '/inventario',
-          builder: (context, params) => InventarioWidget(),
+          builder: (context, params) => const InventarioWidget(),
         ),
         FFRoute(
           name: 'Contabilidad',
           path: '/contabilidad',
-          builder: (context, params) => ContabilidadWidget(),
+          builder: (context, params) => const ContabilidadWidget(),
         ),
         FFRoute(
           name: 'Asistentevirtual',
           path: '/asistentevirtual',
-          builder: (context, params) => AsistentevirtualWidget(),
+          builder: (context, params) => const AsistentevirtualWidget(),
         ),
         FFRoute(
           name: 'Usuarios',
           path: '/usuarios',
-          builder: (context, params) => UsuariosWidget(),
+          builder: (context, params) => const UsuariosWidget(),
         ),
         FFRoute(
           name: 'Datos',
           path: '/datos',
-          builder: (context, params) => DatosWidget(),
+          builder: (context, params) => const DatosWidget(),
         ),
         FFRoute(
           name: 'Logs',
           path: '/logs',
-          builder: (context, params) => LogsWidget(),
+          builder: (context, params) => const LogsWidget(),
         ),
         FFRoute(
           name: 'Guarda_Documento',
           path: '/guardaDocumento',
-          builder: (context, params) => GuardaDocumentoWidget(),
+          builder: (context, params) => const GuardaDocumentoWidget(),
         ),
         FFRoute(
           name: 'Analisis',
           path: '/analisis',
-          builder: (context, params) => AnalisisWidget(),
+          builder: (context, params) => const AnalisisWidget(),
         ),
         FFRoute(
           name: 'PreguntasFrecuentes',
           path: '/preguntasFrecuentes',
-          builder: (context, params) => PreguntasFrecuentesWidget(),
+          builder: (context, params) => const PreguntasFrecuentesWidget(),
         ),
         FFRoute(
           name: 'ListaDePersonal',
           path: '/UsuariosCopy',
-          builder: (context, params) => ListaDePersonalWidget(),
+          builder: (context, params) => const ListaDePersonalWidget(),
         ),
         FFRoute(
           name: 'SeguiminetoFinanciero',
           path: '/seguiminetoFinanciero',
-          builder: (context, params) => SeguiminetoFinancieroWidget(),
+          builder: (context, params) => const SeguiminetoFinancieroWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -392,7 +385,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

@@ -1,13 +1,9 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'info_compra_model.dart';
 export 'info_compra_model.dart';
 
@@ -40,12 +36,12 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.registro =
-          await ContabilidadRecord.getDocumentOnce(widget!.registro!);
+          await ContabilidadRecord.getDocumentOnce(widget.registro!);
       while (_model.contador < _model.registro!.precios.length) {
         _model.costoTotal = _model.costoTotal +
             functions.multiplicacionTotalitems(
-                _model.registro?.catidadesCompradas?[_model.contador],
-                _model.registro?.precios?[_model.contador])!;
+                _model.registro?.catidadesCompradas[_model.contador],
+                _model.registro?.precios[_model.contador])!;
         setState(() {});
         _model.contador = _model.contador + 1;
         setState(() {});
@@ -136,7 +132,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                   0.0,
                 )),
             child: StreamBuilder<ContabilidadRecord>(
-              stream: ContabilidadRecord.getDocument(widget!.registro!),
+              stream: ContabilidadRecord.getDocument(widget.registro!),
               builder: (context, snapshot) {
                 // Customize what your widget looks like when it's loading.
                 if (!snapshot.hasData) {
@@ -180,9 +176,9 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                       Stack(
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -190,7 +186,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           30.0, 0.0, 30.0, 0.0),
                                       child: Text(
                                         'Detalles de compra (Factura)${containerContabilidadRecord.itemsComprados.length.toString()}',
@@ -210,7 +206,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 10.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -224,7 +220,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                   onTap: () async {
                                     Navigator.pop(context);
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.clear,
                                     color: Colors.black,
                                     size: 40.0,
@@ -242,7 +238,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 20.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -263,7 +259,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 20.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -284,7 +280,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 20.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -305,7 +301,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 20.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -326,13 +322,13 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           25.0, 0.0, 20.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -387,7 +383,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -414,7 +410,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -448,7 +444,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                                       ],
                                                     );
                                                   }).divide(
-                                                      SizedBox(height: 20.0)),
+                                                      const SizedBox(height: 20.0)),
                                                 );
                                               },
                                             ),
@@ -460,7 +456,7 @@ class _InfoCompraWidgetState extends State<InfoCompraWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 20.0, 20.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,

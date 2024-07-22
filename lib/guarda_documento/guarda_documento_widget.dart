@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'guarda_documento_model.dart';
 export 'guarda_documento_model.dart';
 
@@ -55,7 +53,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -77,12 +75,12 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             75.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 100.0,
@@ -103,7 +101,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             35.0, 75.0, 0.0, 0.0),
                         child: Text(
                           'Manejo de Inventarios',
@@ -120,7 +118,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -134,16 +132,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar PDF',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.picture_as_pdf,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -155,7 +153,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -165,7 +163,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -179,16 +177,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar EXCEL',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.document_scanner,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -200,7 +198,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -213,12 +211,12 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             75.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 100.0,
@@ -239,7 +237,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             35.0, 75.0, 0.0, 0.0),
                         child: Text(
                           'Manejo de Registro de Usuarios',
@@ -256,7 +254,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             28.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -270,16 +268,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar PDF',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.picture_as_pdf,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -291,7 +289,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -301,7 +299,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -315,16 +313,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar EXCEL',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.document_scanner,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -336,7 +334,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -349,12 +347,12 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             75.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 100.0,
@@ -375,7 +373,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             35.0, 75.0, 0.0, 0.0),
                         child: Text(
                           'Manejo de Datos Contabled',
@@ -392,7 +390,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             64.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -406,16 +404,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar PDF',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.picture_as_pdf,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -427,7 +425,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -437,7 +435,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -451,16 +449,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar EXCEL',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.document_scanner,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -472,7 +470,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -485,12 +483,12 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             75.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 100.0,
@@ -511,7 +509,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             35.0, 75.0, 0.0, 0.0),
                         child: Text(
                           'Manejo de Datos Contabled',
@@ -528,7 +526,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             64.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -542,16 +540,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar PDF',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.picture_as_pdf,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -563,7 +561,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -573,7 +571,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -587,16 +585,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar EXCEL',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.document_scanner,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -608,7 +606,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -621,12 +619,12 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             75.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 100.0,
@@ -647,7 +645,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             35.0, 75.0, 0.0, 0.0),
                         child: Text(
                           'Manejo de Datos Contabled',
@@ -664,7 +662,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             64.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -678,16 +676,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar PDF',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.picture_as_pdf,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -699,7 +697,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -709,7 +707,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             175.0, 75.0, 0.0, 0.0),
                         child: Container(
                           width: 330.0,
@@ -723,16 +721,16 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                               print('Button pressed ...');
                             },
                             text: 'Descargar EXCEL',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.document_scanner,
                               size: 60.0,
                             ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsets.all(0.0),
+                              iconPadding: const EdgeInsets.all(0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -744,7 +742,7 @@ class _GuardaDocumentoWidgetState extends State<GuardaDocumentoWidget> {
                                     fontWeight: FontWeight.w800,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

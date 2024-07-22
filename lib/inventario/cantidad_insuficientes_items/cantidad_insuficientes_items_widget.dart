@@ -1,14 +1,9 @@
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'cantidad_insuficientes_items_model.dart';
 export 'cantidad_insuficientes_items_model.dart';
@@ -129,7 +124,7 @@ class _CantidadInsuficientesItemsWidgetState
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -144,17 +139,17 @@ class _CantidadInsuficientesItemsWidgetState
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               60.0, 0.0, 60.0, 0.0),
                           child: Text(
-                            'No hay sufuciente!',
+                            '¡No hay sufuciente!',
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
                                 .displayLarge
@@ -187,7 +182,7 @@ class _CantidadInsuficientesItemsWidgetState
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -202,7 +197,7 @@ class _CantidadInsuficientesItemsWidgetState
                           setState(() {});
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.clear,
                           color: Colors.black,
                           size: 40.0,
@@ -214,7 +209,7 @@ class _CantidadInsuficientesItemsWidgetState
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
               child: Builder(
                 builder: (context) {
                   final todo =
@@ -226,7 +221,7 @@ class _CantidadInsuficientesItemsWidgetState
                       children: List.generate(todo.length, (todoIndex) {
                         final todoItem = todo[todoIndex];
                         return Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -278,8 +273,7 @@ class _CantidadInsuficientesItemsWidgetState
                                     width: 329.0,
                                     height: 153.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).tertiary,
+                                      color: const Color(0xFF5CC2CA),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                     ),
@@ -289,10 +283,10 @@ class _CantidadInsuficientesItemsWidgetState
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 0.0, 0.0),
                                             child: Container(
-                                              decoration: BoxDecoration(
+                                              decoration: const BoxDecoration(
                                                 borderRadius: BorderRadius.only(
                                                   bottomLeft:
                                                       Radius.circular(0.0),
@@ -350,7 +344,7 @@ class _CantidadInsuficientesItemsWidgetState
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
@@ -364,7 +358,7 @@ class _CantidadInsuficientesItemsWidgetState
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   20.0,
@@ -514,9 +508,9 @@ class _CantidadInsuficientesItemsWidgetState
                           ),
                         );
                       })
-                          .divide(SizedBox(height: 20.0))
-                          .addToStart(SizedBox(height: 10.0))
-                          .addToEnd(SizedBox(height: 20.0)),
+                          .divide(const SizedBox(height: 20.0))
+                          .addToStart(const SizedBox(height: 10.0))
+                          .addToEnd(const SizedBox(height: 20.0)),
                     ),
                   );
                 },

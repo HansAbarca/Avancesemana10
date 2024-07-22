@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'anadir_pregunta_general_model.dart';
 export 'anadir_pregunta_general_model.dart';
@@ -51,7 +50,7 @@ class _AnadirPreguntaGeneralWidgetState
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -115,17 +114,17 @@ class _AnadirPreguntaGeneralWidgetState
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
                                 '¿Deseas añadir esta pregunta?',
@@ -146,7 +145,7 @@ class _AnadirPreguntaGeneralWidgetState
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -166,8 +165,8 @@ class _AnadirPreguntaGeneralWidgetState
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF00B821),
-                              boxShadow: [
+                              color: const Color(0xFF00B821),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -180,7 +179,7 @@ class _AnadirPreguntaGeneralWidgetState
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'Si',
                                 textAlign: TextAlign.center,
@@ -208,8 +207,8 @@ class _AnadirPreguntaGeneralWidgetState
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFFD4D4D4),
-                              boxShadow: [
+                              color: const Color(0xFFD4D4D4),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -222,7 +221,7 @@ class _AnadirPreguntaGeneralWidgetState
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'No ',
                                 textAlign: TextAlign.center,

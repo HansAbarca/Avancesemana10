@@ -1,11 +1,8 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_model.dart';
 export 'home_model.dart';
 
@@ -46,7 +43,7 @@ class _HomeWidgetState extends State<HomeWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Stack(
             children: [
               Opacity(
@@ -55,7 +52,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -66,13 +63,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -91,7 +88,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           children: [
                             Expanded(
                               child: Text(
-                                'Multiservicios y Piscinas',
+                                'Multiservicios y  Piscinas',
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -131,18 +128,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   30.0, 0.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         5.0, 0.0, 0.0, 5.0),
                                     child: AuthUserStreamWidget(
                                       builder: (context) => Text(
-                                        'Usuario: ${currentUserDisplayName}',
+                                        'Usuario: $currentUserDisplayName',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -181,7 +178,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   child: Container(
                                     width: 145.0,
                                     height: 139.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
@@ -262,7 +259,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       child: Container(
                                         width: 145.0,
                                         height: 139.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
@@ -343,7 +340,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   child: Container(
                                     width: 145.0,
                                     height: 139.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
@@ -424,7 +421,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       child: Container(
                                         width: 145.0,
                                         height: 139.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
@@ -509,7 +506,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       child: Container(
                                         width: 145.0,
                                         height: 139.0,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                           boxShadow: [
                                             BoxShadow(
@@ -576,7 +573,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 Container(
                                   width: 145.0,
                                   height: 139.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -639,9 +636,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ],
                             ),
                           ]
-                              .divide(SizedBox(height: 50.0))
-                              .addToStart(SizedBox(height: 20.0))
-                              .addToEnd(SizedBox(height: 20.0)),
+                              .divide(const SizedBox(height: 50.0))
+                              .addToStart(const SizedBox(height: 20.0))
+                              .addToEnd(const SizedBox(height: 20.0)),
                         ),
                       ),
                     ),

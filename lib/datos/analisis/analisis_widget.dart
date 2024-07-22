@@ -2,13 +2,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'analisis_model.dart';
 export 'analisis_model.dart';
 
@@ -75,7 +71,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                 snapshot.data!;
 
             return Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Stack(
                 children: [
                   Opacity(
@@ -84,7 +80,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                       width: double.infinity,
                       height: double.infinity,
                       decoration: BoxDecoration(
-                        color: Color(0x00FFFFFF),
+                        color: const Color(0x00FFFFFF),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
@@ -95,14 +91,14 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Stack(
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -128,14 +124,14 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   25.0, 25.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -144,7 +140,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                       onTap: () async {
                                         context.pushNamed('Datos');
                                       },
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.arrow_back_ios_rounded,
                                         color: Colors.white,
                                         size: 40.0,
@@ -160,10 +156,10 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                           child: Column(
                             children: [
                               Align(
-                                alignment: Alignment(0.0, 0),
+                                alignment: const Alignment(0.0, 0),
                                 child: TabBar(
                                   labelColor: Colors.white,
-                                  unselectedLabelColor: Color(0xFF9ABAD0),
+                                  unselectedLabelColor: const Color(0xFF9ABAD0),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
@@ -186,11 +182,11 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                         }(),
                                         letterSpacing: 0.0,
                                       ),
-                                  unselectedLabelStyle: TextStyle(),
+                                  unselectedLabelStyle: const TextStyle(),
                                   indicatorColor:
                                       FlutterFlowTheme.of(context).primary,
-                                  padding: EdgeInsets.all(4.0),
-                                  tabs: [
+                                  padding: const EdgeInsets.all(4.0),
+                                  tabs: const [
                                     Tab(
                                       text: 'Análisis mensual',
                                     ),
@@ -220,7 +216,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 20.0, 20.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -269,7 +265,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 30.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -277,7 +273,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Stack(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 children: [
                                                   Row(
@@ -364,12 +360,12 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                             snapshot.data!;
 
                                         return Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 20.0, 20.0, 0.0),
                                                 child: Row(
@@ -497,7 +493,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           20.0,
                                                                           0.0,
                                                                           0.0,
@@ -505,7 +501,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                       child:
                                                                           Container(
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           borderRadius:
                                                                               BorderRadius.only(
                                                                             bottomLeft:
@@ -552,7 +548,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                                   width: 120.0,
                                                                                   height: 120.0,
                                                                                   clipBehavior: Clip.antiAlias,
-                                                                                  decoration: BoxDecoration(
+                                                                                  decoration: const BoxDecoration(
                                                                                     shape: BoxShape.circle,
                                                                                   ),
                                                                                   child: Image.network(
@@ -564,7 +560,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                             ),
                                                                             Expanded(
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                 child: SingleChildScrollView(
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
@@ -631,13 +627,13 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                             ),
                                                           );
                                                         })
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 20.0))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height:
                                                                         15.0))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 15.0)),
                                                       ),
                                                     );
@@ -679,12 +675,12 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                             snapshot.data!;
 
                                         return Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 20.0, 0.0),
                                                 child: Row(
@@ -813,7 +809,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           20.0,
                                                                           0.0,
                                                                           0.0,
@@ -821,7 +817,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                       child:
                                                                           Container(
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           borderRadius:
                                                                               BorderRadius.only(
                                                                             bottomLeft:
@@ -841,7 +837,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                           children: [
                                                                             Expanded(
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 40.0, 20.0),
                                                                                 child: SingleChildScrollView(
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
@@ -857,7 +853,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                                                               textAlign: TextAlign.center,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Readex Pro',
-                                                                                                    color: Color(0xFF040000),
+                                                                                                    color: const Color(0xFF040000),
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w500,
                                                                                                   ),
@@ -926,13 +922,13 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                             ),
                                                           );
                                                         })
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 20.0))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height:
                                                                         15.0))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 15.0)),
                                                       ),
                                                     );
@@ -940,7 +936,7 @@ class _AnalisisWidgetState extends State<AnalisisWidget>
                                                 ),
                                               ),
                                             ].addToStart(
-                                                SizedBox(height: 20.0)),
+                                                const SizedBox(height: 20.0)),
                                           ),
                                         );
                                       },

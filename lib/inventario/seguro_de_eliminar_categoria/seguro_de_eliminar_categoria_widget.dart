@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'seguro_de_eliminar_categoria_model.dart';
 export 'seguro_de_eliminar_categoria_model.dart';
 
@@ -48,7 +45,7 @@ class _SeguroDeEliminarCategoriaWidgetState
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -112,17 +109,17 @@ class _SeguroDeEliminarCategoriaWidgetState
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   30.0, 0.0, 30.0, 0.0),
                               child: Text(
                                 '¿Deseas eliminar esta categoría?',
@@ -143,7 +140,7 @@ class _SeguroDeEliminarCategoriaWidgetState
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -160,8 +157,8 @@ class _SeguroDeEliminarCategoriaWidgetState
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFFD4D4D4),
-                              boxShadow: [
+                              color: const Color(0xFFD4D4D4),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -174,7 +171,7 @@ class _SeguroDeEliminarCategoriaWidgetState
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'No ',
                                 textAlign: TextAlign.center,
@@ -195,15 +192,15 @@ class _SeguroDeEliminarCategoriaWidgetState
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            await widget!.categoria!.delete();
+                            await widget.categoria!.delete();
                             Navigator.pop(context);
                           },
                           child: Container(
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFFFF4545),
-                              boxShadow: [
+                              color: const Color(0xFFFF4545),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -216,7 +213,7 @@ class _SeguroDeEliminarCategoriaWidgetState
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'Borrar',
                                 textAlign: TextAlign.center,
@@ -224,7 +221,7 @@ class _SeguroDeEliminarCategoriaWidgetState
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: Color(0xFFFFD1D1),
+                                      color: const Color(0xFFFFD1D1),
                                       fontSize: 20.0,
                                       letterSpacing: 0.0,
                                     ),

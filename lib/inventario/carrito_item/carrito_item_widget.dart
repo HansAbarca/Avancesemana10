@@ -2,14 +2,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'carrito_item_model.dart';
 export 'carrito_item_model.dart';
 
@@ -140,7 +135,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(40.0),
@@ -155,18 +150,18 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               60.0, 0.0, 60.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
-                              widget!.nombreItem,
+                              widget.nombreItem,
                               'error',
                             ),
                             textAlign: TextAlign.center,
@@ -201,7 +196,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -216,7 +211,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                           setState(() {});
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.clear,
                           color: Colors.black,
                           size: 40.0,
@@ -234,10 +229,10 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                     child: Text(
                       valueOrDefault<String>(
-                        widget!.categoria,
+                        widget.categoria,
                         'Error!',
                       ),
                       textAlign: TextAlign.center,
@@ -259,14 +254,14 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Expanded(
                             child: Text(
                               valueOrDefault<String>(
-                                widget!.descripcion,
+                                widget.descripcion,
                                 'Error!',
                               ),
                               textAlign: TextAlign.center,
@@ -299,7 +294,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(50.0),
                                 bottomRight: Radius.circular(50.0),
@@ -308,7 +303,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 10.0, 10.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -322,23 +317,23 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                       type: PageTransitionType.fade,
                                       child: FlutterFlowExpandedImageView(
                                         image: Image.network(
-                                          widget!.imagen!,
+                                          widget.imagen!,
                                           fit: BoxFit.contain,
                                         ),
                                         allowRotation: false,
-                                        tag: widget!.imagen!,
+                                        tag: widget.imagen!,
                                         useHeroAnimation: true,
                                       ),
                                     ),
                                   );
                                 },
                                 child: Hero(
-                                  tag: widget!.imagen!,
+                                  tag: widget.imagen!,
                                   transitionOnUserGestures: true,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
                                     child: Image.network(
-                                      widget!.imagen!,
+                                      widget.imagen!,
                                       width: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
@@ -398,7 +393,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(50.0),
                                 bottomRight: Radius.circular(50.0),
@@ -407,7 +402,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 10.0, 10.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -421,23 +416,23 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                       type: PageTransitionType.fade,
                                       child: FlutterFlowExpandedImageView(
                                         image: Image.network(
-                                          widget!.imagen!,
+                                          widget.imagen!,
                                           fit: BoxFit.contain,
                                         ),
                                         allowRotation: false,
-                                        tag: widget!.imagen!,
+                                        tag: widget.imagen!,
                                         useHeroAnimation: true,
                                       ),
                                     ),
                                   );
                                 },
                                 child: Hero(
-                                  tag: widget!.imagen!,
+                                  tag: widget.imagen!,
                                   transitionOnUserGestures: true,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
                                     child: Image.network(
-                                      widget!.imagen!,
+                                      widget.imagen!,
                                       width: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
@@ -490,7 +485,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -534,7 +529,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 4.0,
                                                               color: Color(
@@ -546,7 +541,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                             )
                                                           ],
                                                           borderRadius:
-                                                              BorderRadius.only(
+                                                              const BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     50.0),
@@ -571,7 +566,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                             Text(
                                                               valueOrDefault<
                                                                   String>(
-                                                                widget!
+                                                                widget
                                                                     .cantidadDeseada
                                                                     ?.toString(),
                                                                 'error',
@@ -599,7 +594,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -607,7 +602,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                           MainAxisSize.max,
                                                       children: [
                                                         Text(
-                                                          'Precio por unidad: ₡ ${widget!.precio?.toString()}',
+                                                          'Precio por unidad: ₡ ${widget.precio?.toString()}',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -624,7 +619,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 5.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -632,7 +627,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                           MainAxisSize.max,
                                                       children: [
                                                         Text(
-                                                          'Precio total: ₡ ${functions.multiplicacionTotalitems(widget!.cantidadDeseada, widget!.precio).toString()}',
+                                                          'Precio total: ₡ ${functions.multiplicacionTotalitems(widget.cantidadDeseada, widget.precio).toString()}',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -651,7 +646,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                     ),
                                                   ),
                                                 ].divide(
-                                                    SizedBox(height: 10.0)),
+                                                    const SizedBox(height: 10.0)),
                                               ),
                                             ],
                                           ),
@@ -660,10 +655,10 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                     ),
                                   ],
                                 ),
-                              ].divide(SizedBox(height: 20.0)),
+                              ].divide(const SizedBox(height: 20.0)),
                             ),
                           ),
-                        ].addToStart(SizedBox(width: 100.0)),
+                        ].addToStart(const SizedBox(width: 100.0)),
                       ),
                     if (() {
                       if (MediaQuery.sizeOf(context).width < kBreakpointSmall) {
@@ -731,7 +726,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
+                                                        boxShadow: const [
                                                           BoxShadow(
                                                             blurRadius: 4.0,
                                                             color: Color(
@@ -743,7 +738,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                           )
                                                         ],
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   50.0),
@@ -768,7 +763,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                           Text(
                                                             valueOrDefault<
                                                                 String>(
-                                                              widget!
+                                                              widget
                                                                   .cantidadDeseada
                                                                   ?.toString(),
                                                               'error',
@@ -793,11 +788,11 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                     ),
                                                   ],
                                                 ),
-                                                if (widget!.cantidadDeseada !=
+                                                if (widget.cantidadDeseada !=
                                                     1)
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -806,7 +801,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                       children: [
                                                         Text(
                                                           'Precio por unidad: ₡ ${formatNumber(
-                                                            widget!.precio,
+                                                            widget.precio,
                                                             formatType:
                                                                 FormatType
                                                                     .decimal,
@@ -829,7 +824,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                     ),
                                                   ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 5.0, 0.0, 0.0),
                                                   child: Row(
@@ -840,9 +835,9 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                         'Precio total: ₡ ${formatNumber(
                                                           functions
                                                               .multiplicacionTotalitems(
-                                                                  widget!
+                                                                  widget
                                                                       .cantidadDeseada,
-                                                                  widget!
+                                                                  widget
                                                                       .precio),
                                                           formatType: FormatType
                                                               .decimal,
@@ -867,7 +862,7 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                                     ],
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 10.0)),
+                                              ].divide(const SizedBox(height: 10.0)),
                                             ),
                                           ],
                                         ),
@@ -875,14 +870,14 @@ class _CarritoItemWidgetState extends State<CarritoItemWidget>
                                     ),
                                   ],
                                 ),
-                              ].divide(SizedBox(height: 10.0)),
+                              ].divide(const SizedBox(height: 10.0)),
                             ),
                           ),
                         ],
                       ),
                   ]
-                      .divide(SizedBox(height: 20.0))
-                      .addToEnd(SizedBox(height: 30.0)),
+                      .divide(const SizedBox(height: 20.0))
+                      .addToEnd(const SizedBox(height: 30.0)),
                 ),
               ),
             ),

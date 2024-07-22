@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'asistentevirtual_model.dart';
 export 'asistentevirtual_model.dart';
 
@@ -44,7 +41,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Stack(
             children: [
               Opacity(
@@ -53,7 +50,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -64,20 +61,20 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Stack(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               children: [
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -118,7 +115,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                   ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       25.0, 25.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -126,7 +123,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -135,7 +132,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                           onTap: () async {
                                             context.pushNamed('Home');
                                           },
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.arrow_back_ios_rounded,
                                             color: Colors.white,
                                             size: 40.0,
@@ -154,7 +151,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -174,7 +171,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                   child: Container(
                                     width: 145.0,
                                     height: 139.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
@@ -240,7 +237,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                 Container(
                                   width: 145.0,
                                   height: 139.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -302,7 +299,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 50.0)),
+                          ].divide(const SizedBox(height: 50.0)),
                         ),
                       ),
                     ),

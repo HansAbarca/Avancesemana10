@@ -1,7 +1,6 @@
 import '/alertas/compra_realizada_con_exito/compra_realizada_con_exito_widget.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -9,14 +8,9 @@ import '/inventario/cantidad_insuficientes_items/cantidad_insuficientes_items_wi
 import '/inventario/carrito_item/carrito_item_widget.dart';
 import '/inventario/seguro_de_comprar/seguro_de_comprar_widget.dart';
 import '/inventario/seguro_de_eliminar_de_carrito/seguro_de_eliminar_de_carrito_widget.dart';
-import 'dart:math';
 import '/flutter_flow/random_data_util.dart' as random_data;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'carrito_model.dart';
@@ -181,7 +175,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
           return Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFFE8E8F4),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(40.0),
@@ -197,14 +191,14 @@ class _CarritoWidgetState extends State<CarritoWidget>
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   60.0, 0.0, 60.0, 0.0),
                               child: Text(
                                 'Carrito',
@@ -241,7 +235,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -257,7 +251,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                 setState(() {});
                                 Navigator.pop(context);
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.clear,
                                 color: Colors.black,
                                 size: 40.0,
@@ -270,7 +264,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                 ),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Builder(
                       builder: (context) {
                         final carritoItems =
@@ -395,7 +389,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                               return 124.0;
                                             }
                                           }(),
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(20.0),
@@ -407,7 +401,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                           ),
                                           child: Stack(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             children: [
                                               Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -416,7 +410,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(25.0, 0.0,
                                                                 25.0, 0.0),
                                                     child: Row(
@@ -429,7 +423,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                         Expanded(
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         30.0,
                                                                         0.0,
@@ -487,7 +481,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       30.0,
                                                                       0.0,
@@ -541,7 +535,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                       false)
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Padding(
                                                         padding:
@@ -607,7 +601,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                           child: Icon(
                                                             Icons
                                                                 .delete_forever,
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFFF0000),
                                                             size: () {
                                                               if (MediaQuery.sizeOf(
@@ -647,9 +641,9 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                 ],
                               );
                             })
-                                .divide(SizedBox(height: 20.0))
-                                .addToStart(SizedBox(height: 15.0))
-                                .addToEnd(SizedBox(height: 15.0)),
+                                .divide(const SizedBox(height: 20.0))
+                                .addToStart(const SizedBox(height: 15.0))
+                                .addToEnd(const SizedBox(height: 15.0)),
                           ),
                         );
                       },
@@ -657,7 +651,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -666,7 +660,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                         child: Stack(
                           children: [
                             if ((FFAppState().Cargando == false) &&
-                                (containerCarritoRecordList.length != 0))
+                                (containerCarritoRecordList.isNotEmpty))
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     valueOrDefault<double>(
@@ -754,8 +748,8 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                           nombreItem: _model.itemDatos?.nombre,
                                           cantidadSolicitada: _model
                                               .carrito?[FFAppState().contador]
-                                              ?.itemInventario
-                                              ?.cantidadDeseada,
+                                              .itemInventario
+                                              .cantidadDeseada,
                                           cantidadDisponible:
                                               _model.itemDatos?.cantidad,
                                           referenciaItem:
@@ -779,7 +773,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                           return Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: SeguroDeComprarWidget(),
+                                            child: const SeguroDeComprarWidget(),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
@@ -872,24 +866,24 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                                   _model
                                                       .carrito?[
                                                           FFAppState().contador]
-                                                      ?.itemInventario
-                                                      ?.nombreItem
+                                                      .itemInventario
+                                                      .nombreItem
                                                 ]),
                                                 'CatidadesCompradas':
                                                     FieldValue.arrayUnion([
                                                   _model
                                                       .carrito?[
                                                           FFAppState().contador]
-                                                      ?.itemInventario
-                                                      ?.cantidadDeseada
+                                                      .itemInventario
+                                                      .cantidadDeseada
                                                 ]),
                                                 'Precios':
                                                     FieldValue.arrayUnion([
                                                   _model
                                                       .carrito?[
                                                           FFAppState().contador]
-                                                      ?.itemInventario
-                                                      ?.precio
+                                                      .itemInventario
+                                                      .precio
                                                 ]),
                                               },
                                             ),
@@ -914,7 +908,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
                                               child:
-                                                  CompraRealizadaConExitoWidget(),
+                                                  const CompraRealizadaConExitoWidget(),
                                             );
                                           },
                                         ).then((value) => safeSetState(() {}));
@@ -935,7 +929,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
                                             child:
-                                                CantidadInsuficientesItemsWidget(),
+                                                const CantidadInsuficientesItemsWidget(),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
@@ -961,7 +955,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                                         return 124.0;
                                       }
                                     }(),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFF00B821),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(50.0),
@@ -1034,7 +1028,7 @@ class _CarritoWidgetState extends State<CarritoWidget>
                     ],
                   ),
                 ),
-              ].addToEnd(SizedBox(height: 20.0)),
+              ].addToEnd(const SizedBox(height: 20.0)),
             ),
           );
         },

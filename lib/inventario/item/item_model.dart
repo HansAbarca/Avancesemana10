@@ -1,28 +1,7 @@
-import '/alertas/cambio_exitozo/cambio_exitozo_widget.dart';
-import '/alertas/item_anadido_carrito/item_anadido_carrito_widget.dart';
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_expanded_image_view.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/inventario/carrito/carrito_widget.dart';
-import '/inventario/cuanto_deseas_solicitar/cuanto_deseas_solicitar_widget.dart';
-import '/inventario/guardar_cambios/guardar_cambios_widget.dart';
-import '/inventario/seguro_eliminar_item/seguro_eliminar_item_widget.dart';
-import 'dart:math';
 import 'item_widget.dart' show ItemWidget;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 
 class ItemModel extends FlutterFlowModel<ItemWidget> {
   ///  Local state fields for this component.

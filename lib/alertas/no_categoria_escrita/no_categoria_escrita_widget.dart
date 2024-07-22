@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'no_categoria_escrita_model.dart';
 export 'no_categoria_escrita_model.dart';
 
@@ -54,11 +52,11 @@ class _NoCategoriaEscritaWidgetState extends State<NoCategoriaEscritaWidget> {
         Container(
           width: double.infinity,
           height: 69.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xFFCC5555),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [

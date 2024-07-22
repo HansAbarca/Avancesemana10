@@ -1,11 +1,7 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'seguro_de_crear_item_model.dart';
 export 'seguro_de_crear_item_model.dart';
 
@@ -59,7 +55,7 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -123,17 +119,17 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   30.0, 0.0, 30.0, 0.0),
                               child: Text(
                                 '¿Deseas añadir el producto  al inventario?',
@@ -154,7 +150,7 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -168,12 +164,12 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                             await InventarioRecord.collection
                                 .doc()
                                 .set(createInventarioRecordData(
-                                  cantidad: widget!.cantidad,
-                                  descripcion: widget!.descripcion,
-                                  categoria: widget!.categoria,
-                                  precio: widget!.precio,
-                                  nombre: widget!.nombre,
-                                  imagen: widget!.foto,
+                                  cantidad: widget.cantidad,
+                                  descripcion: widget.descripcion,
+                                  categoria: widget.categoria,
+                                  precio: widget.precio,
+                                  nombre: widget.nombre,
+                                  imagen: widget.foto,
                                 ));
                             FFAppState().ItemAnadido = true;
                             setState(() {});
@@ -185,8 +181,8 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF00B821),
-                              boxShadow: [
+                              color: const Color(0xFF00B821),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -199,7 +195,7 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'Si',
                                 textAlign: TextAlign.center,
@@ -227,8 +223,8 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                             width: 98.0,
                             height: 43.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFFD4D4D4),
-                              boxShadow: [
+                              color: const Color(0xFFD4D4D4),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 2.0,
                                   color: Color(0x33000000),
@@ -241,7 +237,7 @@ class _SeguroDeCrearItemWidgetState extends State<SeguroDeCrearItemWidget> {
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Text(
                                 'No ',
                                 textAlign: TextAlign.center,

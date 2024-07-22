@@ -1,12 +1,9 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/usuarios/editar_rol/editar_rol_widget.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'lista_de_personal_model.dart';
 export 'lista_de_personal_model.dart';
@@ -61,7 +58,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -72,14 +69,14 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               40.0, 0.0, 40.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -105,14 +102,14 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               25.0, 0.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -121,7 +118,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                   onTap: () async {
                                     context.pushNamed('Usuarios');
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_back_ios_rounded,
                                     color: Colors.white,
                                     size: 40.0,
@@ -136,12 +133,12 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   25.0, 0.0, 25.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -152,7 +149,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                       width: MediaQuery.sizeOf(context).width *
                                           1.0,
                                       height: 80.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
                                           BoxShadow(
@@ -172,7 +169,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             15.0, 0.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -186,7 +183,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 10.0, 0.0),
                                                 child: Row(
@@ -196,7 +193,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     0.0,
@@ -211,7 +208,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                               EasyDebounce
                                                                   .debounce(
                                                             '_model.buscarTextController',
-                                                            Duration(
+                                                            const Duration(
                                                                 milliseconds:
                                                                     50),
                                                             () async {
@@ -231,8 +228,8 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                         records
                                                                             .map(
                                                                               (record) => TextSearchItem.fromTerms(record, [
-                                                                                record.displayName!,
-                                                                                record.email!
+                                                                                record.displayName,
+                                                                                record.email
                                                                               ]),
                                                                             )
                                                                             .toList(),
@@ -394,7 +391,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                       snapshot.data!;
 
                                   return Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Stack(
                                       children: [
                                         if (_model.buscar == false)
@@ -527,7 +524,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                     1.0,
                                                                 height: 80.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   color: Color(
                                                                       0xFFE6E6E6),
                                                                   boxShadow: [
@@ -568,7 +565,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                     Flexible(
                                                                       child:
                                                                           Stack(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         children: [
@@ -580,7 +577,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 15.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 15.0),
                                                                                   child: Text(
                                                                                     empleadosItem.displayName,
                                                                                     textAlign: TextAlign.center,
@@ -601,7 +598,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                                 MainAxisAlignment.end,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 10.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 10.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -630,9 +627,9 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                       ),
                                                     );
                                                   })
-                                                      .divide(SizedBox(
+                                                      .divide(const SizedBox(
                                                           height: 15.0))
-                                                      .addToStart(SizedBox(
+                                                      .addToStart(const SizedBox(
                                                           height: 15.0)),
                                                 ),
                                               );
@@ -768,7 +765,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                     1.0,
                                                                 height: 80.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   color: Color(
                                                                       0xFFE6E6E6),
                                                                   boxShadow: [
@@ -809,7 +806,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                     Flexible(
                                                                       child:
                                                                           Stack(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         children: [
@@ -821,7 +818,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 15.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 15.0),
                                                                                   child: Text(
                                                                                     empleadosItem.displayName,
                                                                                     textAlign: TextAlign.center,
@@ -842,7 +839,7 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                                                 MainAxisAlignment.end,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 10.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 25.0, 10.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -871,9 +868,9 @@ class _ListaDePersonalWidgetState extends State<ListaDePersonalWidget> {
                                                       ),
                                                     );
                                                   })
-                                                      .divide(SizedBox(
+                                                      .divide(const SizedBox(
                                                           height: 15.0))
-                                                      .addToStart(SizedBox(
+                                                      .addToStart(const SizedBox(
                                                           height: 15.0)),
                                                 ),
                                               );

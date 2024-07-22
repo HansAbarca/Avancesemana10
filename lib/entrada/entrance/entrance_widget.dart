@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'entrance_model.dart';
 export 'entrance_model.dart';
 
@@ -45,13 +42,13 @@ class _EntranceWidgetState extends State<EntranceWidget> {
         key: scaffoldKey,
         backgroundColor: Colors.white,
         body: Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Container(
             width: double.infinity,
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               maxWidth: double.infinity,
             ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
             ),
             child: Column(
@@ -72,7 +69,7 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                     child: Container(
                       width: double.infinity,
                       height: 100.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           colors: [Color(0x00FFFFFF), Colors.white],
                           stops: [0.0, 1.0],
@@ -80,9 +77,9 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                           end: AlignmentDirectional(0, 1.0),
                         ),
                       ),
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 64.0, 24.0, 24.0),
                         child: Text(
                           'Multiservicios\ny Piscinas  ',
@@ -91,7 +88,7 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                               .displayMedium
                               .override(
                                 fontFamily: 'Urbanist',
-                                color: Color(0xFF101213),
+                                color: const Color(0xFF101213),
                                 fontSize: 48.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
@@ -102,20 +99,20 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed('EntrarLogin');
                           },
                           text: 'Ingresa con tu e-mail ',
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.mail_outline_outlined,
                             color: Colors.white,
                             size: 24.0,
@@ -123,11 +120,11 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                           options: FFButtonOptions(
                             width: 563.0,
                             height: 60.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 12.0, 0.0),
-                            color: Color(0xFF101213),
+                            color: const Color(0xFF101213),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
@@ -138,24 +135,24 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                                   fontWeight: FontWeight.bold,
                                 ),
                             elevation: 0.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xFF101213),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(50.0),
-                            hoverColor: Color(0xFF101213),
+                            hoverColor: const Color(0xFF101213),
                             hoverTextColor: Colors.white,
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 24.0, 0.0, 64.0),
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
                             children: [
-                              TextSpan(
+                              const TextSpan(
                                 text: '',
                                 style: TextStyle(),
                               ),
@@ -165,7 +162,7 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                                     .bodyLarge
                                     .override(
                                       fontFamily: 'Plus Jakarta Sans',
-                                      color: Color(0xFF101213),
+                                      color: const Color(0xFF101213),
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
@@ -177,7 +174,7 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                                 .labelLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: Color(0xFF57636C),
+                                  color: const Color(0xFF57636C),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,

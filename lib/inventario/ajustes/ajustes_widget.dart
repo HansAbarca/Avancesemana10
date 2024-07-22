@@ -4,11 +4,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/inventario/agregar_categoria/agregar_categoria_widget.dart';
 import '/inventario/seguro_de_eliminar_categoria/seguro_de_eliminar_categoria_widget.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'ajustes_model.dart';
 export 'ajustes_model.dart';
@@ -237,7 +235,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFE8E8F4),
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(20.0),
@@ -252,14 +250,14 @@ class _AjustesWidgetState extends State<AjustesWidget>
             Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Stack(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           children: [
                             if (FFAppState().AjustesInventario == 'MENU')
                               Text(
@@ -293,7 +291,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                             if (FFAppState().AjustesInventario ==
                                 'EDITARCATEGORIAS')
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     100.0, 0.0, 100.0, 0.0),
                                 child: Text(
                                   'Editar Categorías',
@@ -326,7 +324,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                               ),
                             if (FFAppState().AjustesInventario == 'ModoEdicion')
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     100.0, 0.0, 100.0, 0.0),
                                 child: Text(
                                   'Modo Edición',
@@ -364,7 +362,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 30.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -379,7 +377,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                           setState(() {});
                           Navigator.pop(context);
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.clear,
                           color: Colors.black,
                           size: 40.0,
@@ -389,7 +387,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -404,7 +402,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                             FFAppState().AjustesInventario = 'MENU';
                             setState(() {});
                           },
-                          child: Icon(
+                          child: const Icon(
                             Icons.arrow_back_ios,
                             color: Colors.black,
                             size: 40.0,
@@ -418,7 +416,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
             ),
             if (FFAppState().AjustesInventario == 'MENU')
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -498,7 +496,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -511,7 +509,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 20.0, 0.0),
                                         child: Text(
                                           'Editar Categorías',
@@ -628,7 +626,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
                                     bottomRight: Radius.circular(50.0),
                                     topLeft: Radius.circular(50.0),
@@ -641,7 +639,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 20.0, 0.0),
                                         child: Text(
                                           'Modo edición de ítems',
@@ -683,7 +681,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                         ),
                       ],
                     ),
-                  ].divide(SizedBox(height: 30.0)),
+                  ].divide(const SizedBox(height: 30.0)),
                 ),
               ),
             Expanded(
@@ -692,7 +690,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                   if (FFAppState().AjustesInventario == 'EDITARCATEGORIAS')
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -758,7 +756,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                           return Padding(
                                             padding: MediaQuery.viewInsetsOf(
                                                 context),
-                                            child: AgregarCategoriaWidget(),
+                                            child: const AgregarCategoriaWidget(),
                                           );
                                         },
                                       ).then((value) => safeSetState(() {}));
@@ -781,7 +779,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                           return 124.0;
                                         }
                                       }(),
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Color(0xFF00B821),
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(50.0),
@@ -797,7 +795,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 0.0),
                                               child: Text(
@@ -870,7 +868,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                     snapshot.data!;
 
                                 return Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Builder(
                                     builder: (context) {
                                       final categorias =
@@ -936,7 +934,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
-                                                        BorderRadius.only(
+                                                        const BorderRadius.only(
                                                       bottomLeft:
                                                           Radius.circular(50.0),
                                                       bottomRight:
@@ -982,7 +980,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                                                             MainAxisAlignment.center,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 10.0,
                                                                                 0.0,
                                                                                 10.0,
@@ -1006,7 +1004,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
                                                                 padding: EdgeInsetsDirectional
@@ -1074,7 +1072,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                                                   child: Icon(
                                                                     Icons
                                                                         .delete_forever,
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFFFF0000),
                                                                     size: () {
                                                                       if (MediaQuery.sizeOf(context)
@@ -1103,12 +1101,12 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                                     ],
                                                   ),
                                                 ),
-                                              ].addToEnd(SizedBox(width: 30.0)),
+                                              ].addToEnd(const SizedBox(width: 30.0)),
                                             );
                                           })
-                                              .divide(SizedBox(height: 20.0))
+                                              .divide(const SizedBox(height: 20.0))
                                               .addToStart(
-                                                  SizedBox(height: 20.0)),
+                                                  const SizedBox(height: 20.0)),
                                         ),
                                       );
                                     },
@@ -1130,7 +1128,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     25.0, 40.0, 25.0, 0.0),
                                 child: Text(
                                   'Activa o desactiva el modo edición.',
@@ -1145,7 +1143,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 20.0)),
+                          ].divide(const SizedBox(width: 20.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -1179,8 +1177,8 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                 value: _model.switchValue!,
                                 onChanged: (newValue) async {
                                   setState(
-                                      () => _model.switchValue = newValue!);
-                                  if (newValue!) {
+                                      () => _model.switchValue = newValue);
+                                  if (newValue) {
                                     FFAppState().ModoEdicionItems = true;
                                     setState(() {});
                                   } else {
@@ -1188,16 +1186,16 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                     setState(() {});
                                   }
                                 },
-                                activeColor: Color(0xFF00B821),
-                                activeTrackColor: Color(0xFF3D7E44),
-                                inactiveTrackColor: Color(0xFF885151),
-                                inactiveThumbColor: Color(0xFFFF4545),
+                                activeColor: const Color(0xFF00B821),
+                                activeTrackColor: const Color(0xFF3D7E44),
+                                inactiveTrackColor: const Color(0xFF885151),
+                                inactiveThumbColor: const Color(0xFFFF4545),
                               ),
                             ),
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1275,7 +1273,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                               return 124.0;
                                             }
                                           }(),
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0xFF00B821),
                                             borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(50.0),
@@ -1401,7 +1399,7 @@ class _AjustesWidgetState extends State<AjustesWidget>
                                               return 124.0;
                                             }
                                           }(),
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0xFFFF4545),
                                             borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(50.0),

@@ -1,10 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'contabilidad_model.dart';
 export 'contabilidad_model.dart';
 
@@ -45,7 +42,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primary,
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Stack(
             children: [
               Opacity(
@@ -54,7 +51,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: Image.asset(
@@ -65,14 +62,14 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -98,14 +95,14 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               25.0, 25.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -114,7 +111,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                                   onTap: () async {
                                     context.pushNamed('Home');
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_back_ios_rounded,
                                     color: Colors.white,
                                     size: 40.0,
@@ -129,7 +126,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -145,7 +142,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                                     Container(
                                       width: 145.0,
                                       height: 139.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
                                           BoxShadow(
@@ -210,7 +207,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                                     Container(
                                       width: 145.0,
                                       height: 139.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
                                           BoxShadow(
@@ -282,7 +279,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                                 Container(
                                   width: 145.0,
                                   height: 139.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
                                       BoxShadow(
@@ -344,7 +341,7 @@ class _ContabilidadWidgetState extends State<ContabilidadWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 50.0)),
+                          ].divide(const SizedBox(height: 50.0)),
                         ),
                       ),
                     ),

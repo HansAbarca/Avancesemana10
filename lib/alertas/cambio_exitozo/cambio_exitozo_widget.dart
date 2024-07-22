@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cambio_exitozo_model.dart';
 export 'cambio_exitozo_model.dart';
@@ -57,11 +56,11 @@ class _CambioExitozoWidgetState extends State<CambioExitozoWidget> {
         Container(
           width: double.infinity,
           height: 69.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xFF00B821),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [

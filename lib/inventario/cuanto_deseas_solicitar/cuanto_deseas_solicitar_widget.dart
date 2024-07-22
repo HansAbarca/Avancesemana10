@@ -3,12 +3,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_count_controller.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cuanto_deseas_solicitar_model.dart';
 export 'cuanto_deseas_solicitar_model.dart';
@@ -79,7 +77,7 @@ class _CuantoDeseasSolicitarWidgetState
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -145,9 +143,9 @@ class _CuantoDeseasSolicitarWidgetState
                   Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -155,7 +153,7 @@ class _CuantoDeseasSolicitarWidgetState
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       35.0, 0.0, 35.0, 0.0),
                                   child: Text(
                                     '¿Cuanto deseas solicitar?',
@@ -178,7 +176,7 @@ class _CuantoDeseasSolicitarWidgetState
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -233,7 +231,7 @@ class _CuantoDeseasSolicitarWidgetState
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -288,7 +286,7 @@ class _CuantoDeseasSolicitarWidgetState
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 if (_model.countControllerValue! <=
-                                    widget!.cantidadDisponible!) {
+                                    widget.cantidadDisponible!) {
                                   FFAppState().banderaSolicitudAprobada = 1;
                                   setState(() {});
                                   FFAppState().cantidadSolicitada =
@@ -308,7 +306,7 @@ class _CuantoDeseasSolicitarWidgetState
                                       return Padding(
                                         padding:
                                             MediaQuery.viewInsetsOf(context),
-                                        child: CantidadInvalidaWidget(),
+                                        child: const CantidadInvalidaWidget(),
                                       );
                                     },
                                   ).then((value) => safeSetState(() {}));
@@ -330,7 +328,7 @@ class _CuantoDeseasSolicitarWidgetState
                                     return 90.0;
                                   }
                                 }(),
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFF00B821),
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
@@ -345,7 +343,7 @@ class _CuantoDeseasSolicitarWidgetState
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 20.0, 0.0),
                                         child: Text(
                                           'Agregar a carrito',

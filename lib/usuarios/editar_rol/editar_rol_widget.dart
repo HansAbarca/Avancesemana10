@@ -1,11 +1,7 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'editar_rol_model.dart';
 export 'editar_rol_model.dart';
 
@@ -48,7 +44,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.end,
@@ -90,7 +86,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                 ),
                 0.0),
             child: StreamBuilder<UsersRecord>(
-              stream: UsersRecord.getDocument(widget!.refUser!),
+              stream: UsersRecord.getDocument(widget.refUser!),
               builder: (context, snapshot) {
                 // Customize what your widget looks like when it's loading.
                 if (!snapshot.hasData) {
@@ -135,9 +131,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -145,7 +141,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           30.0, 0.0, 30.0, 0.0),
                                       child: Text(
                                         'Editar rol de usuario',
@@ -165,9 +161,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
+                            alignment: const AlignmentDirectional(0.0, -1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -175,7 +171,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           30.0, 0.0, 30.0, 20.0),
                                       child: Text(
                                         'Nombre: ${containerUsersRecord.displayName}',
@@ -195,13 +191,13 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 2.0, 0.0, 2.0, 0.0),
                             child: Container(
                               width: double.infinity,
                               height: 74.0,
-                              decoration: BoxDecoration(),
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              decoration: const BoxDecoration(),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: SingleChildScrollView(
                                 scrollDirection: Axis.horizontal,
                                 child: Row(
@@ -210,7 +206,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       MainAxisAlignment.spaceAround,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -218,7 +214,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
-                                          await widget!.refUser!
+                                          await widget.refUser!
                                               .update(createUsersRecordData(
                                             rol: 'Jefe',
                                           ));
@@ -229,9 +225,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           decoration: BoxDecoration(
                                             color: containerUsersRecord.rol ==
                                                     'Jefe'
-                                                ? Color(0xFF00B821)
-                                                : Color(0xFFD4D4D4),
-                                            boxShadow: [
+                                                ? const Color(0xFF00B821)
+                                                : const Color(0xFFD4D4D4),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 2.0,
                                                 color: Color(0x33000000),
@@ -246,7 +242,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               'Jefe',
                                               textAlign: TextAlign.center,
@@ -259,7 +255,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                                                 .rol ==
                                                             'Jefe'
                                                         ? Colors.white
-                                                        : Color(0xFF262525),
+                                                        : const Color(0xFF262525),
                                                     fontSize: 24.0,
                                                     letterSpacing: 0.0,
                                                   ),
@@ -269,7 +265,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -277,7 +273,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
-                                          await widget!.refUser!
+                                          await widget.refUser!
                                               .update(createUsersRecordData(
                                             rol: 'Admin',
                                           ));
@@ -288,9 +284,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           decoration: BoxDecoration(
                                             color: containerUsersRecord.rol ==
                                                     'Admin'
-                                                ? Color(0xFF00B821)
-                                                : Color(0xFFD4D4D4),
-                                            boxShadow: [
+                                                ? const Color(0xFF00B821)
+                                                : const Color(0xFFD4D4D4),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 2.0,
                                                 color: Color(0x33000000),
@@ -305,7 +301,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               'Admin',
                                               textAlign: TextAlign.center,
@@ -318,7 +314,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                                                 .rol ==
                                                             'Admin'
                                                         ? Colors.white
-                                                        : Color(0xFF262525),
+                                                        : const Color(0xFF262525),
                                                     fontSize: 24.0,
                                                     letterSpacing: 0.0,
                                                   ),
@@ -328,7 +324,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -336,7 +332,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
-                                          await widget!.refUser!
+                                          await widget.refUser!
                                               .update(createUsersRecordData(
                                             rol: 'Empleado',
                                           ));
@@ -347,9 +343,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           decoration: BoxDecoration(
                                             color: containerUsersRecord.rol ==
                                                     'Empleado'
-                                                ? Color(0xFF00B821)
-                                                : Color(0xFFD4D4D4),
-                                            boxShadow: [
+                                                ? const Color(0xFF00B821)
+                                                : const Color(0xFFD4D4D4),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 2.0,
                                                 color: Color(0x33000000),
@@ -364,7 +360,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               'Empleado',
                                               textAlign: TextAlign.center,
@@ -377,7 +373,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                                                 .rol ==
                                                             'Empleado'
                                                         ? Colors.white
-                                                        : Color(0xFF262525),
+                                                        : const Color(0xFF262525),
                                                     fontSize: 24.0,
                                                     letterSpacing: 0.0,
                                                   ),
@@ -387,7 +383,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -395,7 +391,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onLongPress: () async {
-                                          await widget!.refUser!
+                                          await widget.refUser!
                                               .update(createUsersRecordData(
                                             rol: 'Cliente',
                                           ));
@@ -406,9 +402,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           decoration: BoxDecoration(
                                             color: containerUsersRecord.rol ==
                                                     'Cliente'
-                                                ? Color(0xFF00B821)
-                                                : Color(0xFFD4D4D4),
-                                            boxShadow: [
+                                                ? const Color(0xFF00B821)
+                                                : const Color(0xFFD4D4D4),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 2.0,
                                                 color: Color(0x33000000),
@@ -423,7 +419,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               'Cliente',
                                               textAlign: TextAlign.center,
@@ -436,7 +432,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                                                 .rol ==
                                                             'Cliente'
                                                         ? Colors.white
-                                                        : Color(0xFF262525),
+                                                        : const Color(0xFF262525),
                                                     fontSize: 24.0,
                                                     letterSpacing: 0.0,
                                                   ),
@@ -446,9 +442,9 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(width: 15.0))
-                                      .addToStart(SizedBox(width: 15.0))
-                                      .addToEnd(SizedBox(width: 15.0)),
+                                      .divide(const SizedBox(width: 15.0))
+                                      .addToStart(const SizedBox(width: 15.0))
+                                      .addToEnd(const SizedBox(width: 15.0)),
                                 ),
                               ),
                             ),
@@ -456,7 +452,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 10.0, 10.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -472,7 +468,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                 setState(() {});
                                 Navigator.pop(context);
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.clear,
                                 color: Colors.black,
                                 size: 40.0,

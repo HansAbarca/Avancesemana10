@@ -216,7 +216,7 @@ class _AsistentevirtualWidgetState extends State<AsistentevirtualWidget> {
                                           children: [
                                             Expanded(
                                               child: Text(
-                                                'Preguntas Frecuentes',
+                                                'Preguntas Frecuentes ',
                                                 textAlign: TextAlign.center,
                                                 style:
                                                     FlutterFlowTheme.of(context)

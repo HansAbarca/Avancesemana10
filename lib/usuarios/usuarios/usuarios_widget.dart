@@ -260,7 +260,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                                                   10.0,
                                                                   0.0),
                                                       child: Text(
-                                                        'Registo de Personal ',
+                                                        'Registro de Personal ',
                                                         textAlign:
                                                             TextAlign.center,
                                                         style:
@@ -338,7 +338,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget> {
                                               alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
-                                                'Recuperar Contraseña',
+                                                'Recuperación de Contraseña',
                                                 textAlign: TextAlign.center,
                                                 style:
                                                     FlutterFlowTheme.of(context)

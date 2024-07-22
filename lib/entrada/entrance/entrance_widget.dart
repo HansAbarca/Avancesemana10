@@ -82,7 +82,7 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 64.0, 24.0, 24.0),
                         child: Text(
-                          'Multiservicios\ny Piscinas  ',
+                          'Multiservicios\ny Piscinas     ',
                           textAlign: TextAlign.center,
                           style: FlutterFlowTheme.of(context)
                               .displayMedium
@@ -111,11 +111,11 @@ class _EntranceWidgetState extends State<EntranceWidget> {
                           onPressed: () async {
                             context.pushNamed('EntrarLogin');
                           },
-                          text: 'Ingresa con tu e-mail ',
+                          text: 'Ingresa con tu e-mail  ',
                           icon: const Icon(
                             Icons.mail_outline_outlined,
                             color: Colors.white,
-                            size: 24.0,
+                            size: 25.0,
                           ),
                           options: FFButtonOptions(
                             width: 563.0,

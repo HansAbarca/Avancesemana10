@@ -98,7 +98,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       fontSize: () {
                                         if (MediaQuery.sizeOf(context).width <
                                             kBreakpointSmall) {
-                                          return 30.0;
+                                          return 20.0;
                                         } else if (MediaQuery.sizeOf(context)
                                                 .width <
                                             kBreakpointMedium) {
@@ -145,7 +145,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             .override(
                                               fontFamily: 'Readex Pro',
                                               color: Colors.white,
+                                              fontSize: 20.0,
                                               letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w600,
                                             ),
                                       ),
                                     ),
@@ -232,6 +234,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.bold,
                                                         ),
                                               ),
                                             ),
@@ -313,6 +317,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
                                                         ),
                                                   ),
                                                 ),
@@ -394,6 +400,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
                                                         ),
                                               ),
                                             ),
@@ -475,6 +483,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
                                                         ),
                                                   ),
                                                 ),
@@ -560,6 +570,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
                                                         ),
                                                   ),
                                                 ),
@@ -618,14 +630,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             child: Text(
                                               'Logs',
                                               textAlign: TextAlign.center,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Readex Pro',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Readex Pro',
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],

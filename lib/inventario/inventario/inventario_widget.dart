@@ -743,7 +743,7 @@ class _InventarioWidgetState extends State<InventarioWidget>
                                                             fontSize: 20.0,
                                                             letterSpacing: 0.0,
                                                           ),
-                                                  hintText: 'Buscar',
+                                                  hintText: 'Buscar   ',
                                                   hintStyle:
                                                       FlutterFlowTheme.of(
                                                               context)

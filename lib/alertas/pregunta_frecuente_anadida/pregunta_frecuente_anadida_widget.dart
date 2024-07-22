@@ -67,7 +67,7 @@ class _PreguntaFrecuenteAnadidaWidgetState
               mainAxisSize: MainAxisSize.max,
               children: [
                 Text(
-                  '¡Pregunta añadida con éxito!',
+                  'Pregunta añadida con éxito!',
                   style: FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Outfit',
                         color: Colors.white,

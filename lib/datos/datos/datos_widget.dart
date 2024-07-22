@@ -186,7 +186,7 @@ class _DatosWidgetState extends State<DatosWidget> {
                                         children: [
                                           Expanded(
                                             child: Text(
-                                              'Análisis',
+                                              'Análisis de Datos',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)

@@ -144,7 +144,7 @@ class _EditarRolWidgetState extends State<EditarRolWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           30.0, 0.0, 30.0, 0.0),
                                       child: Text(
-                                        'Editar rol de usuario',
+                                        'Editar el rol del usuario',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium

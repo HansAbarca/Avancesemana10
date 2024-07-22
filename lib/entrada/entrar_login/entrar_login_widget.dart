@@ -729,7 +729,7 @@ class _EntrarLoginWidgetState extends State<EntrarLoginWidget>
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
-                                                  'Rellene los campos para registrarse',
+                                                  'Rellene los campos para registrarse.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium
@@ -758,7 +758,7 @@ class _EntrarLoginWidgetState extends State<EntrarLoginWidget>
                                                     obscureText: false,
                                                     decoration: InputDecoration(
                                                       labelText:
-                                                          'Nombre Completo ',
+                                                          'Nombre Completo  ',
                                                       labelStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -863,7 +863,7 @@ class _EntrarLoginWidgetState extends State<EntrarLoginWidget>
                                                     obscureText: false,
                                                     decoration: InputDecoration(
                                                       labelText:
-                                                          'Correo Electronico',
+                                                          'Correo Electronico  ',
                                                       labelStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -967,7 +967,8 @@ class _EntrarLoginWidgetState extends State<EntrarLoginWidget>
                                                     obscureText: !_model
                                                         .passwordCreateVisibility,
                                                     decoration: InputDecoration(
-                                                      labelText: 'Contraseña',
+                                                      labelText:
+                                                          'Contraseña   ',
                                                       labelStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -1306,6 +1307,9 @@ class _EntrarLoginWidgetState extends State<EntrarLoginWidget>
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
                                                               ),
                                                       elevation: 3.0,
                                                       borderSide: const BorderSide(

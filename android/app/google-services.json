@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "728501138512",
+    "project_id": "avancesemana10",
+    "storage_bucket": "avancesemana10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728501138512:android:59f750ab03d04d85e80d55",
+        "android_client_info": {
+          "package_name": "com.tesis.sistemagestiondepiscinas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728501138512-egq93fklqlskadrqc5qndrl48327qti2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD75LSAoQM0p43djHSeZmsv21_fJCKLN68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728501138512-egq93fklqlskadrqc5qndrl48327qti2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "728501138512-rh4fb84v6d6rslngo8s20e618c9f2ivc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tesis.sistemagestiondepiscinas"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
